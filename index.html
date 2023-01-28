@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Genshin Impact | Store</title>
+	<meta name="viewport" content="width=300, initial-scale=1.0">
+	<link rel="icon" type="image" href="https://play-lh.googleusercontent.com/So91qs_eRRralMxUzt_tkj4aBXvVSYqWiEJrzrk_LBd5071mSMv_gBKslyulIOrPsiQ">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+	
+	<style>
+		body
+		{
+			background-color: rgba(67, 86, 86, .4);
+			background-image: url("https://i.pinimg.com/originals/0a/48/22/0a4822f46600eec6118daad48c55f7e9.jpg");
+			background-blend-mode: multiply;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+		}
+		a
+		{
+			color: white;
+			text-decoration: none;
+		}
+		.ImgSTD
+		{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			background-color: #D8C8D2;
+		}
+		.logo
+		{
+			width: 25px;
+			height: 25px;
+			object-fit: cover;
+			background-color: unset;
+		}
+		img
+		{
+			background-color: unset;
+		}
+
+		/*header---------------------------------------------------------------------*/
+		nav
+		{
+			position: fixed;
+			padding: 0px;
+			margin: 0px;
+			background-color: #36316A;
+			background-blend-mode: multiply;
+			opacity: 0.9;
+			width: 110%;
+			height: 3em;
+			top: 0;
+			left: 0;
+			font-family: 'Gudea', sans-serif;
+			text-transform: uppercase;
+			display: flex;
+			align-items: center;
+			box-shadow: -3px 1px 4px;
+			box-sizing: border-box;
+			font-size: 1.2em;
+			z-index: 2;
+		}
+		.navlogo
+		{
+			object-fit: cover;
+			width: 100px;
+		}
+
+		.title1
+		{
+			margin-left: 1%;
+			color: white;
+			margin-right: 10px;
+		}
+		a.toggle-button
+		{
+			position: absolute;
+		 	right: 11%;
+			display: none;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 30px;
+			height: 21px;
+		}
+
+		a.toggle-button span.bar
+		{
+			height: 3px;
+			width: 100%;
+			background-color: white;
+			border-radius: 10px;
+		}
+		ul.navlink2
+		{
+			position: absolute;
+			display: flex;
+			right: 10%;
+			z-index: 3;
+			height: 100%;
+			align-items: center;
+
+			padding: 0px;
+			margin: 0px;
+			align-content: space-around;
+			list-style: none;
+		}
+		li.navlist
+		{
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 0px 10px;
+		}
+
+		a.navmain
+		{
+			position: absolute;
+			height: 100%;
+			padding: 0px;
+			margin: 0px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin-left: 1em;
+		}
+		a.nav
+		{
+			display: block;
+			color: white;
+			position: relative;
+			text-decoration: none;
+		}
+		a.navmain:hover, li.navlist:hover
+		{
+			text-decoration: none;
+			transition: .5s;
+			background-color: #474BCF;
+		}
+
+
+		/*second header-------------------*/
+		.Header1
+		{
+			background-color: #544E58;
+			padding-top: 3em;
+			padding-bottom: 5em;
+			opacity: .9;
+			position: relative;
+			z-index: -1;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+		.head1title, .foot1title
+		{
+			text-align: center;
+			margin: 1.5em 1em;
+			margin-bottom: .5em;
+			color: #FFFFFF;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: lighter;
+			font-size: 3.5em;
+		}
+
+		.head1text
+		{
+			color: #E3F4F4;
+			text-align: center;
+			width: 37em;
+			font-size: 1.2em;
+			border-top: solid white;
+			padding: 0px 3em;
+			padding-top: 10px;
+			border-top-width: 1px;
+		}
+
+		/*flex1---------------------------------------------------------------------*/
+		.flex1
+		{
+			margin-top: 10em;
+			position: relative;
+			display: flex;
+			justify-content: center;
+		}
+		.title2
+		{
+			position: relative;
+			z-index: 1;
+			top: 4.2em;
+			position: sticky;
+
+			box-sizing: content-box;
+			background: linear-gradient(30deg, rgba(255,220,233,0.7) 0%, rgba(255,201,174,0.7) 50%, rgba(255,239,165,0.7) 100%);
+			background-blend-mode: multiply;
+			width: 15em;
+			margin-top: 2em;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 5em;
+			padding: .3em 1em;
+
+			border-radius: 1em;
+		}
+		.fonts1, .fonts2, .fonts3
+		{
+			font-size: 1.7em;
+			margin: 0;
+			padding: 0;
+			font-family: 'Montserrat', sans-serif;
+			text-align: center;
+		}
+
+		.fonts2
+		{
+			font-size: 1.5em;
+			font-weight: bold;
+			color: #522561;
+			margin-bottom: 3%;
+			margin-top: 3%;
+		}
+
+		.fonts3
+		{
+			color: #522561;
+			font-size: 1.5em;
+			width: 3em;
+			text-align: center;
+			font-weight: bolder;
+		}
+
+		.grid1
+		{
+			position: relative;
+			margin: 30px 0px;
+			display: grid;
+			grid-template-columns: repeat(3, 23em);
+			grid-gap: 7em;
+		}
+
+		@media(max-width: 1550px)/*breakpoint grid*/
+		{
+		.grid1
+		{
+			position: relative;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 5em;
+			margin: 30px 8%;
+		}
+		}
+
+		.Align1
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background: rgb(189,183,226);
+			background: -moz-linear-gradient(312deg, rgba(189,183,226,0.8) 0%, rgba(255,240,244,0.8) 50%, rgba(255,241,225,0.9) 100%);
+			background: -webkit-linear-gradient(312deg, rgba(189,183,226,0.8) 0%, rgba(255,240,244,0.8) 50%, rgba(255,241,225,0.9) 100%);
+			background: linear-gradient(312deg, rgba(189,183,226,0.8) 0%, rgba(255,240,244,0.8) 50%, rgba(255,241,225,0.9) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdb7e2",endColorstr="#fff1e1",GradientType=1);
+			border-radius: 30px;
+		}
+		.Align1:hover
+		{
+			transition: .5s;
+			z-index: 0;
+			background-color: rgb(252, 79, 79 );
+		}
+		.ImgCon
+		{
+			position: relative;
+			margin: 0px;
+			border-radius: 1%;
+		}
+		.Align1btn
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: .5em 2em;
+		}
+		.btn-primary-edit
+		{
+			box-sizing: content-box;
+			text-align: center;
+			position: relative;
+			width: 7em;
+			height: 1.3em;
+			background-color: #B77575;
+			border: none;
+			cursor: pointer;
+		}
+		.Align1lstcon
+		{
+			white-space: nowrap;
+			margin: 0.5em 0px;
+			width: 80%;
+		}
+		.Align1list
+		{
+			text-align: center;
+			list-style: none;
+			border-top: 1px solid;
+			font-size: 1em;
+			color: #180101;
+		}
+
+		/*2nd section--------------------------------------*/
+		.flex2
+		{
+			z-index: 1;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 10em 5em;
+			position: relative
+		}
+		.flex2item
+		{
+			position: relative;
+			margin: 3.5em;
+			width: 23em;
+			background-color: rgba(119, 126, 181, .8);
+			border-radius: 50%;
+		}
+		.flex2ovr
+		{
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+
+    		font-size: 3em;
+    		font-family: 'Montserrat', sans-serif;
+    		color: white;
+    		text-shadow: 0px 0px 12px #CECDCA;
+
+		}
+		.flex2img
+		{
+			position: relative;
+			display: block;
+			mix-blend-mode: multiply;
+			z-index: 0;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+		.flex2img:hover
+		{
+			transition: 1s;
+			mix-blend-mode: normal;
+			cursor: pointer;
+		}
+		.flex2ovr:hover
+		{
+			cursor: pointer;
+		}
+
+		.flex2item1:hover
+		{
+			background-color: rgb(255, 208, 208);
+		}
+		.flex2item2:hover
+		{
+			background-color: rgb(209, 255, 208);
+		}
+		.flex2item3:hover
+		{
+			background-color: rgb(208, 208, 255);
+		}
+		/*footer---------------------------------------------------------------------*/
+		footer
+		{
+			background-color: rgba(84, 78, 88, .8);
+			position: absolute;
+			top: auto;
+			width: 100%
+		}
+		.footer1
+		{
+			text-align: center;
+			margin: 2em;
+		}
+		.btn-primary-edit2
+		{
+			width: 10em;
+		}
+		.footer2
+		{
+			background-color: rgba(73, 63, 104 ,.8);
+			color: rgb(206, 206, 206);
+		}
+
+		.foot2flex
+		{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: start;
+			margin: 0px 30px;
+			padding-top: 30px;
+			margin-bottom: 0px;
+			justify-content: space-around;
+		}
+
+		.footitem
+		{
+			width: 30em;
+			margin: 1em;
+		}
+		.foot2con1
+		{
+			flex-grow: 1;
+		}
+
+		.foot2con2
+		{
+			width: 15em;
+			flex-grow: 1;
+		}
+		.foot2flexitem
+		{
+			display: flex;
+			justify-content: flex-start;
+			margin: 0;
+		}
+		.foot2grid
+		{
+			display: grid;
+			grid-template-columns: repeat(2, 2em);
+			grid-gap: 10px;
+			
+		}
+
+		.foot2con3
+		{
+			width: 15em;
+			flex-grow: 1;
+		}
+		.footitembutton
+		{
+			display: flex;
+			justify-content: flex-start;
+			margin: 0px;
+		}
+
+		/*media viewport------------------------------------------------------------*/
+		@media (max-width: 1200px) /*Common Desktop*/
+		{
+		.grid1
+		{
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 3em;
+			margin: 30px 7%;
+		}
+		.Align1
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		}
+
+		@media (max-width: 1060px) /*Smaller Laptop*/
+		{
+		nav
+		{
+			font-size: auto;
+		}
+		.grid1
+		{
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 1em;
+		}
+		.Align1
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.flex2item
+		{
+			margin: 1em;
+			margin-bottom: 5%;
+		}
+		}
+
+		@media (max-width: 880px) /*Ipad*/
+		{
+		.head1title
+		{
+			margin-left: 4%;
+			margin-right: 4%;
+		}
+		.head1text
+		{
+			color: #E3F4F4;
+			text-align: center;
+			width: 80%;
+			border-top: solid white;
+			border-top-width: 2px;
+		}
+		.title2
+		{
+			width: 20em;
+		}
+		.grid1
+		{
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 3em 1em;
+		}
+		.Align1
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.flex2ovr
+		{
+			font-size: 2.5em;
+		}
+		.flex2item
+		{
+			margin: 10%;
+			margin-bottom: 2%;
+		}
+		}
+
+		@media (max-width: 480px)/*Mobile Device*/
+		{
+		nav
+		{
+			font-size: unset;
+		}
+		ul.navlink2
+		{
+			display: none;
+		}
+		a.toggle-button
+		{
+			display: flex;
+		}
+
+
+		.Header1
+		{
+			padding-bottom: 2em;
+		}
+		.head1title
+		{
+			margin-left: 1%;
+			margin-right: 1%;
+		}
+		.head1text
+		{
+			padding-right: 1em;
+			padding-left: 1em;
+		}
+		.title2
+		{
+			top: 3.3em;
+			width: 70%;
+		}
+		.grid1
+		{
+			grid-template-columns: 1fr;
+			grid-gap: 50px;
+			margin: 30px 10%;
+		}
+		.Align1
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.flex2
+		{
+			margin-left: 3%;
+			margin-right: 3%;
+		}
+		.flex2ovr
+		{
+			font-size: 2em;
+		}
+		.head1title, .foot1title
+		{
+			font-size: 2.2em;
+		}
+		.foot2flex
+		{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-content: center;
+		}
+		.footitem
+		{
+			width: 100%;
+		}
+		.footitemtitle
+		{
+			text-align: center;
+			margin: 0px 0px;
+		}
+		.footitemtext
+		{
+			margin: 0px 0px;
+		}
+		.foot2flexitem
+		{
+			display: flex;
+			justify-content: center;
+		}
+		.footitembutton
+		{
+			display: flex;
+			justify-content: center;
+			margin-top: 2%;
+		}
+		}
+
+
+		@media (max-width: 320px)
+		{
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a class="navmain" href="index.html">
+				<img class="navlogo" src="https://cdn2.steamgriddb.com/file/sgdb-cdn/logo/2465517595f5ea9f225d52ed73a4d0db.png">
+				<span class="title1">miHoYo</span>
+			</a>
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			
+				<ul class="navlink2">
+					<li class="navlist"><a class="nav" href="#">Store</a></li>
+					<li class="navlist"><a class="nav" href="#">About</a></li>
+					<li class="navlist"><a class="nav" href="#">Home</a></li>
+				</ul>
+			
+		</nav>
+
+		<div class="Header1">
+			<h2 class="head1title">
+				Buy Your Favorite Character Here
+			</h2>
+			<p class="head1text">
+				From plushes, figurines, game characters and even a mouse pad for your machine, all available here.  Even if it is a waifu, husbando or your traveling companion including some of the interesting items such as vision and artifacts, all will be accommodated Pick whatever you want and it will be delivered right in front of your door.
+			</p>
+		</div>
+	</header>
+
+	<section class="flex1">
+		<div>
+		<div class="title2">
+			<h3 class="fonts1">
+				Characters
+			</h3>
+		</div>
+		<div class="grid1"><!-- division-->
+		<div class="Align1"><!-- the main box of 2 box-->
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Keqing
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon"src="https://i.pinimg.com/originals/88/c1/2d/88c12d70878a2439ba759c0904077990.png">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$10
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li class="">Electro</li>
+					<li>Mobility</li>
+					<li>Charge Attack Core</li>
+					<li>Low CD</li>
+				</ul>
+			</div>
+		</div>
+			
+		<div class="Align1">
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Diluc
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon"src="https://i.pinimg.com/originals/c1/4a/eb/c14aebe07252ebe0aea425245f97db3a.png">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$12
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li>Pyro</li>
+					<li>Semi-burst</li>
+					<li>High Skill Damage</li>
+					<li>Low Burst CD</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="Align1">
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Mona
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon" src="https://i.pinimg.com/564x/b8/04/81/b804810ab5cebeedd715516b0caa24f2.jpg">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$15
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li>Hydro</li>
+					<li>Burst-Support</li>
+					<li>Utility-Solo Busrt</li>
+					<li>Amplifier</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="Align1">
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Zhongli
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon" src="https://i.pinimg.com/originals/43/4f/74/434f74dac518f7fff4c112279b570005.jpg">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$15
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li>Geo</li>
+					<li>Burst-Tank</li>
+					<li>Utility-Support</li>
+					<li>Shield</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="Align1">
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Qiqi
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon" src="https://i.pinimg.com/originals/49/b6/af/49b6af0bb5c08f47e378cac35b0ab607.jpg">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$30
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li>Cyro</li>
+					<li>Semi Tank</li>
+					<li>Healer</li>
+					<li>Loli</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="Align1">
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Tartaglia
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon" src="https://i.pinimg.com/originals/8f/d4/63/8fd463841bd6dd4f303c2dbb31ed1a7b.jpg">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$9
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li>Hydro</li>
+					<li>Reaper-Sustain DPS</li>
+					<li>Range-Melee</li>
+					<li>Fast Burst</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="Align1">
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Jean
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon" src="https://i.pinimg.com/564x/2d/25/84/2d258455b2592a090069cb8be85a3597.jpg">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$12
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li>Anemo</li>
+					<li>CC</li>
+					<li>Healer</li>
+					<li>Chrager</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="Align1">
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Venti
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon" src="https://i.pinimg.com/originals/08/f9/cf/08f9cf18d6d9a699319964dcce6daff5.jpg">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$15
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li>Anemo</li>
+					<li>Hard CC</li>
+					<li>Range</li>
+					<li>Skill Type</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="Align1">
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Ganyu
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon" src="https://i.pinimg.com/originals/51/8c/3a/518c3a4f85f518fcff598b0ecad80e95.jpg">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$21
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li>Cyro</li>
+					<li>Charge Attack</li>
+					<li>Range</li>
+					<li>Burst</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="Align1">
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Razor
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon" src="https://i.pinimg.com/originals/a8/3c/29/a83c2927097cec4011013303fa0f6d00.png">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$11
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li>Electro</li>
+					<li>Sustain DPS</li>
+					<li>High Attack Speed</li>
+					<li>Solo DPS</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="Align1">
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Fischl
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon" src="https://i.pinimg.com/originals/60/8a/00/608a00510ed27efd518f58e3b888e06a.jpg">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$35
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li>Electro</li>
+					<li>Skiller-Physical</li>
+					<li>Support-Range</li>
+					<li>Hybrid DPS</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="Align1">
+			<div><!-- the box of the first box-->
+				<h4 class="fonts2">
+					Bennet
+				</h4>
+				<div class="ImgCon">
+				<img class="ImgSTD ImgCon" src="https://i.pinimg.com/originals/6a/c7/5e/6ac75ef5394976d16fb2c14f7ab8c616.jpg">
+				</div>
+				<div class="Align1btn">
+					<div class="fonts3">
+					$36
+					</div>
+					<button class="btn btn-primary btn-primary-edit" type="button">Add To Cart</button>
+				</div>
+			</div>
+			<div class="Align1lstcon"><!-- the box of the second box-->
+				<ul class="Align1list">
+					<li>Pyro</li>
+					<li>Healer</li>
+					<li>Amplifier</li>
+					<li>Utility</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		</div>
+	</section>
+
+	<section class="flex2">
+		<div class="flex2item flex2item1"><!--Main Box--><!--Insert Background Image with low opacity-->
+			<img class="ImgSTD flex2img" src="https://i.pinimg.com/originals/93/3a/87/933a87d85997570c85ec8180190e5546.png">
+			<div class="flex2ovr">
+				PLushies
+			</div>
+		</div>
+
+		<div class="flex2item flex2item2"><!--Main Box--><!--Insert Background Image with low opacity-->
+			<img class="ImgSTD flex2img" src="https://i.pinimg.com/originals/87/35/63/873563ee1c2fbbf6db3e0d482a3f673b.jpg">
+			<div class="flex2ovr">
+				Figurines
+			</div>
+
+		</div>
+
+		<div class="flex2item flex2item3"><!--Main Box--><!--Insert Background Image with low opacity-->
+			<img class="ImgSTD flex2img" src="https://i.pinimg.com/originals/94/7b/d4/947bd4109e1bc09bfe31712acfc2ff6b.jpg">
+			<div class="flex2ovr">
+				Peripherals
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<section class="footer1">
+			<div class="foot1title">
+				Visit The Official Website of Genshin Impact
+			</div>
+			<a href="https://genshin.mihoyo.com/en" target="_blank"><button class="btn btn-primary btn-primary-edit2" type="button" style="cursor: pointer;">Visit</button></a>
+		</section>
+
+		<section class="footer2">
+			<div class="foot2flex">
+			<div class="footitem foot2con1"><!--Container-->
+				<div><!--First box of first section-->
+					<h4 class="footitemtitle">Made For Educational Purposes</h4>
+					<p class="footitemtext">This site is not the official website, nor affiliated by Mihoyo and made only for school purposes. This is a mockup of product website and we are not accepting any kinds of payments. I do not own images in this site.</p>
+				</div>
+
+				<div>
+					<h4 class="footitemtitle">Disclaimer</h4>
+					<p class="footitemtext">We are not responsible for any money related activity such as loss of money. By reading this, you understand that the content of this webpage is not intended for selling purposes. Misconduct, sharing and spreading false information about this page will not be tolerated.</p>
+				</div>
+			</div>
+
+			<div class="footitem foot2con2">
+				<h4 class="footitemtitle">Link</h4>
+				<div class="foot2flexitem">
+				<div class="foot2grid">
+				<div class="foot2con2itm">
+					<a href="https://www.facebook.com/Genshinimpact/" target="_blank"><img class="logo" src="https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png"></a>
+				</div>
+				<div class="foot2con2itm">
+					<a href="https://www.instagram.com/genshinimpact/?hl=en" target="_blank"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"></a>
+				</div>
+				<div class="foot2con2itm">
+					<a href="https://www.youtube.com/c/GenshinImpact/videos" target="_blank"><img class="logo" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-512.png"></a>
+				</div>
+				<div class="foot2con2itm">
+					<a href="https://www.instagram.com/genshinimpact/?hl=en" target="_blank"><img class="logo" src="https://www.accuro.org.uk/wp-content/uploads/2020/07/Twitter-logo-2012.png"></a>
+				</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="footitem foot2con3">
+				<h4 class="footitemtitle">
+					&#169;2021
+				</h4>
+				<p class="footitemtext">Hava a question? Concern? Connect with us.</p>
+				<div class="footitembutton">
+				<button class="btn" type="button" style="cursor: pointer;">Contact US</button>
+				</div>
+			</div>
+			</div>
+		</section>
+	</footer>
+</body>
+</html>
